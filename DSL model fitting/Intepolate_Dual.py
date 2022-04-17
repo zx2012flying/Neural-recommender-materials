@@ -8,9 +8,9 @@ from lmfit import Parameters, minimize
 # %% LS regression
 
 fit_params = Parameters()
-fit_params.add('Q1', value = 10, min = 0.01, max = 1000)
+fit_params.add('Q1', value = 10, min = 0.01, max = 10)
 fit_params.add('b1', value = 10, min = 0.01, max = 1000)
-fit_params.add('Q2', value = 10, min = 0.01, max = 1000)
+fit_params.add('Q2', value = 10, min = 0.01, max = 10)
 fit_params.add('b2', value = 10, min = 0.01, max = 1000)
 
 def Dual_Langmuir(params, x, data = None):
