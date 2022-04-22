@@ -108,9 +108,9 @@ for i in range(5158, len(Load)):
         fit_params.add('Q2', value = 5, min = 0.01, max = 20)
         fit_params.add('b2', value = 10, min = 0.001, max = 1000)
     else:
-        fit_params.add('Q1', value = 10, min = 0.01, max = 80)
+        fit_params.add('Q1', value = 10, min = 0.01, max = 100)
         fit_params.add('b1', value = 10, min = 0.001, max = 1000)
-        fit_params.add('Q2', value = 10, min = 0.01, max = 80)
+        fit_params.add('Q2', value = 10, min = 0.01, max = 100)
         fit_params.add('b2', value = 10, min = 0.001, max = 1000)
     
     out = minimize(Dual_Langmuir, fit_params, args = (X, ), kws =  {'data': Y})
